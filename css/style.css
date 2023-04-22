@@ -1,0 +1,49 @@
+/* Estilizações gerais */
+body {
+  margin: 0px;
+  color: #332F2E;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+a {
+  transition: .5s;
+  text-decoration: none;
+}
+
+#brasao {
+  width: 60px;
+}
+
+.links {
+  color: black;
+}
+
+/* Estilização da navbar */
+.navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #94AE93;
+  text-align: center;
+}
+
+.list-inline {
+  margin: 0px;
+}
+
+.menu {
+  text-align: center;
+}
+
+.list-inline-item {
+  display: inline-block;
+  background-color: #F6F8F5;
+  border-radius: 20px;
+  margin-left: 40px;
+  padding: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
