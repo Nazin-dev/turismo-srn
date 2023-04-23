@@ -24,7 +24,7 @@ a {
 /* Estilização da navbar */
 .navbar2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #94AE93;
   text-align: center;
