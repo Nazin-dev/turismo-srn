@@ -4,6 +4,10 @@ body {
   color: #332F2E;
 }
 
+img {
+  width: 100%;
+}
+
 .container-fluid {
   padding: 0px;
 }
@@ -50,14 +54,34 @@ a {
 
 /* Estilização do carrosel */
 
-.carousel {
-  margin: auto;
-  margin-top: 4px;
-  border: 2px groove;
-  width: 100%;
+.carousel-indicators .active {
+  background-color: #94AE93;
 }
-#ind {
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
   background-color: black;
-  opacity: 0.7;
-  border-radius: 4px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+
+/* Estilizando a seção de conhecer mais */
+.text-main {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.text-main p {
+  font-size: 24px;
+  text-indent: 50px;
+  text-align: justify;
+}
+
+.text-main h1 {
+  font-weight: 700;
+}
+
+.btn {
+  margin-bottom: 50px;
+  padding: 15px;
 }
