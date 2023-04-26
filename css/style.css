@@ -17,39 +17,8 @@ a {
   text-decoration: none;
 }
 
-#brasao {
-  width: 60px;
-}
-
 .links {
   color: black;
-}
-
-/* Estilização da navbar */
-.navbar2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #94AE93;
-  text-align: center;
-}
-
-.list-inline {
-  margin: 0px;
-}
-
-.menu {
-  text-align: center;
-}
-
-.list-inline-item {
-  display: inline-block;
-  background-color: #F6F8F5;
-  border-radius: 20px;
-  margin-left: 40px;
-  padding: 10px;
-  margin-top: 2px;
-  margin-bottom: 2px;
 }
 
 /* Estilização do carrosel */
@@ -84,4 +53,69 @@ a {
 .btn {
   margin-bottom: 50px;
   padding: 15px;
+}
+/* Estilização dos cards principais */
+.btn2 {
+  margin-top: 24px;
+}
+
+.ab{
+  padding: 0px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.ab2 {
+  padding-left: 8px;
+}
+
+.ab4 {
+  padding-top: 18px;
+}
+
+.linha2 {
+  padding-top: 18px;
+}
+
+.ab5, .ab6, .ab7 {
+  padding-left: 8px;
+}
+
+.cards {
+  height: 800px;
+  width: 800px;
+  text-align: center;
+}
+
+/* Responsividade dos cards */
+@media (max-width: 600px){
+  .cards {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/* Responsividade do rodapé */
+@media (max-width: 560px) {
+  .rodape2 {
+    margin-top: 2600px;
+  }
+}
+
+h3 {
+  text-align: center;
+  margin-top: 140px;
+}
+.rodape{
+  text-align: center;
+  background-color: #3A5B5A;
+  margin-top: 120px;
+}
+.rodape p{
+  margin: 0px;
+  font-weight: 500;
+  color: white;
+  padding: 8px;
 }
