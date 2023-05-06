@@ -24,7 +24,7 @@ a {
 /* Estilização do carrosel */
 
 .carousel-indicators .active {
-  background-color: #94AE93;
+  background-color: white;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -59,6 +59,7 @@ a {
   margin-top: 24px;
 }
 
+
 .ab{
   padding: 0px;
 }
@@ -89,18 +90,45 @@ img {
   text-align: center;
 }
 
+
 /* Responsividade dos cards */
 @media (max-width: 600px){
   .cards {
-    width: 500px;
-    height: 500px;
+    width: 50vh;
+  }
+  .text-main {
+    padding: 30px;
+  }
+  .imgs {
+    padding-top: 20px;
+  }
+
+  .linha2 {
+    padding: 0px;
   }
 }
 
-/* Responsividade do rodapé */
-@media (max-width: 560px) {
-  .rodape2 {
-    margin-top: 2600px;
+@media (max-width: 600px){
+  .navigation_header a {
+    text-align: center;
+    gap: 1em;
+    margin-top: -10px;
+  }
+  .cards {
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 400px){
+  .cards {
+    width: 40vh;
+  
+  }
+
+  .btn2 {
+    width: 120px;
   }
 }
 
@@ -110,12 +138,85 @@ h3 {
 }
 .rodape{
   text-align: center;
-  background-color: #3A5B5A;
-  margin-top: 120px;
+  background-color: #0889f4;
 }
+
+footer {
+  margin-top: 240px;
+}
+
 .rodape p{
   margin: 0px;
   font-weight: 500;
   color: white;
   padding: 8px;
 }
+
+/* Estilização dos Card Grid */
+.xindex1 {
+  position: absolute;
+  z-index: 10;
+  margin-top: -268px;
+  margin-left: 92px;
+  font-size: 40px;
+}
+
+.xindex2 {
+  position: absolute;
+  margin-top: -191px;
+  margin-left: 73px;
+  width: 100px;
+  font-size: 30px;
+
+}
+
+.xindex3 {
+  position: absolute;
+  margin-top: -191px;
+  margin-left: 43px;
+  font-size: 30px;
+  width: 160px;
+}
+
+.xindex4 {
+  position: absolute;
+  margin-top: -168px;
+  margin-left: 53px;
+  font-size: 30px;
+  width: 140px;
+}
+
+.cards {
+  display: relative;
+}
+
+.xindex1, .xindex2, .xindex3, .xindex4 {
+  transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.pontos {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.pontos_turisticos {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-weight: 700;
+}
+

@@ -9,7 +9,8 @@
   <!-- JavaScript bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/menu-responsivo.css">
+  
   <script src="scripts/script.js" defer></script>
   <title>Turismo | São Raimundo Nonato</title>
 </head>
@@ -17,49 +18,33 @@
 
   <div class="container-fluid">
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="img/brasao_pm_srn (1).png" alt="Bootstrap" width="40" height="40">
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">São Raimundo Nonato</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Roteiros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Pontos turísticos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Serviços</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Eventos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Mapa turístico</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Galeria</a>
-              </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+      <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="img/brasao_pm_srn (1).png" alt="Brasão SRN" class="img_logo_header">
         </div>
-      </nav>
-    </header>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="#" class="active home">Home</a>
+            <a href="#">São Raimundo Nonato</a>
+            <a href="#">Roteiros</a>
+            <a href="#">Pontos Turísticos</a>
+            <a href="#">Serviços</a>
+            <a href="#">Eventos</a>
+            <a href="#">Mapa Turístico</a>
+            <a href="#">Galeria</a>
+        </div>
+    </div>
   </div>
-
+  <span class="liner"></span>
   <!-- Carrosel -->
   <div id="carouselExampleCaptions" class="carousel slide">
 
@@ -111,26 +96,37 @@
 
   <section class="conhecer-mais">
     <div class="container text-main">
-      <h1>São Raimundo Nonato</h1>
-      <p>O municipio de São Raimundo Nonato desenvolveu-se com a construção de casas com a abertura e meno de ruas. Os seus primeres habitantes organizam na sua praça principal uma fera de periodicidade semanal que ficou cornecida em todo o estado. Um dos principais pontos turisticos da cidade é o Parque Nacional Serra da Capivara. Esto parque é considerado pammonio mundial da UNESCO, sendo o responsável pela reconhecimento mundial do município.</p>
-      <button type="button" class="btn btn-outline-primary">Conhecer a Cidade</button>
+      <h1 class="h1-main">São Raimundo Nonato</h1>
+      <p class="p-main">O municipio de São Raimundo Nonato desenvolveu-se com a construção de casas com a abertura e meno de ruas. Os seus primeres habitantes organizam na sua praça principal uma fera de periodicidade semanal que ficou cornecida em todo o estado. Um dos principais pontos turisticos da cidade é o Parque Nacional Serra da Capivara. Esto parque é considerado pammonio mundial da UNESCO, sendo o responsável pela reconhecimento mundial do município.</p>
+      <button type="button" class="btn btn-outline-primary" style="font-weight: 700;">Conhecer a Cidade</button>
     </div>
     <div class="container cards">
+      <h2 class="pontos_turisticos">Pontos Turísticos</h2>
       <div class="row">
-        <div class="col-sm-8 ab1">
-          <img src="img/Rectangle 1.png" alt="">
+        <div class="col-sm-8 ab1 imgs">
+          <img class="animetion1" src="img/Rectangle 1.png" alt="">
+          <p class="xindex1"><a href="" class="pontos">Serra da Capivara</a></p>
         </div>
         <div class="col-sm-4 ab2">
-          <div class="col-sm-12 ab3"><img src="img/Rectangle 3.png" alt=""></div>
-          <div class="col-sm-12 ab4"><img src="img/Rectangle 8.png" alt=""></div>
+          <div class="col-sm-12 ab3 imgs">
+            <img src="img/Rectangle 3.png" alt="">
+            <p class="xindex2"><a href="" class="pontos">Sitio João Pimenta</a></p>
+          </div>
+          <div class="col-sm-12 ab4 imgs"><img src="img/Rectangle 8.png" alt=""></div>
         </div>
       </div>
       <div class="row linha2">
-        <div class="col-sm-4 ab5"><img src="img/Rectangle 5.png" alt=""></div>
-        <div class="col-sm-4 ab6"><img src="img/Rectangle 6.png" alt=""></div>
-        <div class="col-sm-4 ab7"><img src="img/Rectangle 7.png" alt=""></div>
+        <div class="col-sm-4 ab5 imgs">
+          <img src="img/Rectangle 5.png" alt="">
+          <p class="xindex3"><a href="" class="pontos">Museu do Homem Americano</a></p>
+        </div>
+        <div class="col-sm-4 ab6 imgs">
+          <img src="img/Rectangle 6.png" alt="">
+          <p class="xindex4"><a href="" class="pontos">Museu da Natureza</a></p>
+        </div>
+        <div class="col-sm-4 ab7 imgs"><img src="img/Rectangle 7.png" alt=""></div>
       </div>
-      <button type="button" class="btn btn-outline-primary btn2">Conhecer Pontos Turisticos</button>
+      <button type="button" class="btn btn-outline-primary btn2" style="font-weight: 700;">Conhecer Pontos Turisticos</button>
     </div>
   </section>
 
