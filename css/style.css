@@ -212,11 +212,43 @@ footer {
   color: white;
 }
 
-
-
 .pontos_turisticos {
   margin-bottom: 20px;
   margin-top: 40px;
   font-weight: 700;
 }
 
+.serv_text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.serv_row .col  {
+  background-color: #F6F7F9;
+  border: 1px solid;
+}
+
+.col {
+  margin-top: 40px;
+  height: 160px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.col img {
+  width: 120px;
+}
+
+.col p {
+  color: #332F2E;
+}
+
+
+
+.serv_section {
+  display: grid;
+  text-align: center;
+  margin-top: 240px;
+  text-align: center;
+}
