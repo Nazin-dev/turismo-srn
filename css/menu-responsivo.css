@@ -1,3 +1,30 @@
+/* Estilizações gerais */
+body {
+  margin: 0px;
+  color: #332F2E;
+}
+
+img {
+  width: 100%;
+}
+
+.navigation_header{
+  z-index: 9999;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+a {
+  transition: .5s;
+  text-decoration: none;
+}
+
+.links {
+  color: black;
+}
+
 :root{
   --color-white: #fff;
   --color-dark1: rgb(39, 39, 39);
@@ -24,6 +51,10 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.container-fluid {
+  padding: 0px;
 }
 
 .header{
