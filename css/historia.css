@@ -43,7 +43,7 @@
   margin-top: 460px;
 }
 
-.paralax::after {
+.parallax::after {
   content: " ";
   z-index: 0;
   position: absolute;
