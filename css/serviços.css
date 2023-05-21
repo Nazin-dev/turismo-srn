@@ -1,0 +1,34 @@
+/* Parallax */
+.parallax{
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/serviços-parallax.jpeg);
+  background-position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navigation_header{
+  z-index: 9999;
+}
+
+.parallax::after {
+  content: " ";
+  z-index: 1;
+  position: absolute;
+  margin-top: 215px;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+}
+
+.topo p {
+  z-index: 2;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+  font-size: 44px;
+  position: absolute;
+  margin-top: -140px;
+  margin-left: 80px;
+}
