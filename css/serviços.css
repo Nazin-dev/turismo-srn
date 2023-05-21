@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+  display: none;
+}
 /* Parallax */
 .parallax{
   width: 100%;
@@ -13,15 +16,6 @@
   z-index: 9999;
 }
 
-.parallax::after {
-  content: " ";
-  z-index: 1;
-  position: absolute;
-  margin-top: 215px;
-  width: 100%;
-  height: 50%;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
-}
 
 .topo p {
   z-index: 2;
@@ -31,4 +25,44 @@
   position: absolute;
   margin-top: -140px;
   margin-left: 80px;
+}
+
+/* Estilização dos cards */
+.main {
+  margin-top: 80px;
+}
+
+.col-md-3 {
+  display: grid;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  align-items: center;
+  background-color: #464646d3;
+}
+
+.info {
+  border: 1px solid white;
+}
+
+.info p {
+  margin: 10px;
+}
+
+.info a {
+  margin: 10px;
+}
+
+.top-1{
+  padding: 12px;
+}
+
+p {
+  align-self: center;
+}
+
+.mapa {
+  text-align: center;
+  margin-top: 40px;
 }
