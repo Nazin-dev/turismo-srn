@@ -1,0 +1,78 @@
+/* Rodapé */
+.info_rodape {
+  color: #A1A7AE;
+  margin-left: 10px;
+  margin-top: -15px;
+}
+
+.rodape_content{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+.rodape{
+  text-align: center;
+  background-color: #1A1E28;
+  width: 100%;
+  height: 200px;
+}
+
+footer {margin-top: 240px;}
+
+.rodape p{
+  margin: 0px;
+  font-weight: 500;
+  color: white;
+  padding: 5px;
+}
+
+.rodape_row{
+  justify-content: space-between;
+}
+
+.rodape_row a{
+  color: #A1A7AE;
+}
+
+.direitos {
+  margin: 5px;
+}
+
+.rodape_row p{
+  color: #A1A7AE;
+  font-size: 24px;
+  font-weight: 700px;
+  margin-left: -10px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rigth {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.alinha {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+span {
+  width: 5px;
+  height: 5px;
+  background-color: #A1A7AE;
+  margin-top: 15px;
+}

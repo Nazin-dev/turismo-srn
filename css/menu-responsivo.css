@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 /* Estilizações gerais */
 body {
   margin: 0px;
@@ -26,13 +27,13 @@ a {
 }
 
 :root{
-  --color-white: #fff;
-  --color-dark1: rgb(39, 39, 39);
-  --color-dark2: #2d2d2d;
+  --color-white: #F3F4F5;
+  --color-dark1: #F3F4F5;
+  --color-dark2: #1A1E28;
   --color-dark3: #414141;
   --color-dark4: #1c1c1c;
   --color-dark5: #343434;
-  --color-purple: #0D6EFD;
+  --color-purple: #B6D0EE;
 }
 *{
   margin: 0;
@@ -61,7 +62,7 @@ body{
   background-color: var(--color-dark2);
   justify-content: space-between;
   padding: 0 10%;
-  height: 4em;
+  height: 72px;
 }
 .navigation_header{
   gap: 3em;
@@ -79,7 +80,9 @@ body{
   text-decoration: none;
   color: var(--color-purple);
   transition: 1s;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: 'Roboto';
+  font-size: 16px;
 }
 .navigation_header a:hover{
   color: var(--color-white);
@@ -101,6 +104,7 @@ body{
       height: 100%;
       width: 35vw;
       padding: 1em;
+      align-items: start;
       animation-duration: 1s;
       margin-left: -100vw;
   }
@@ -111,4 +115,16 @@ body{
 @keyframes showSidebar {
   from {margin-left: -100vw;}
   to {margin-left: -10vw;}
+}
+
+.logo_texto {
+ margin-top: 15px;
+ font-weight: 700;
+ font-family: 'Roboto';
+ color: #B6D0EE;
+ font-size: 20px;
+}
+
+h1, p, h2, h3, h4, h5, h6, a {
+  font-family: 'Roboto';
 }

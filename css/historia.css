@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 .parallax{
     width: 100%;
     height: 600px;
@@ -32,7 +33,7 @@
   font-family: 'Red Hat Text', sans-serif;
   max-width: 800px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .historia p{
   text-align: justify;
@@ -59,5 +60,23 @@
   background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
 }
 
+.text {
+  color: #F3F4F5;
+  font-family: 'Roboto';
+  font-weight: 900;
+}
+
+h1 {
+  color: #1A1E28;
+  font-family: 'Roboto';
+  font-weight: 700px;
+  font-size: 40px;
+}
+ 
+ p {
+  color: #6E6E8C;
+  font-family: 'Roboto';
+  font-size: 24px;
+}
 
 

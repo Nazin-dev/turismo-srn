@@ -15,7 +15,7 @@
 </head>
 <body>
 
-  <div class="container-fluid fix">
+  <div class="container-fluid">
     <header>
       <div class="header" id="header">
         <button onclick="toggleSidebar()" class="btn_icon_header">
@@ -24,7 +24,7 @@
             </svg>
         </button>
         <div class="logo_header">
-            <img src="img/brasao_pm_srn (1).png" alt="Brasão SRN" class="img_logo_header">
+            <p class="logo_texto">Turismo SRN</p>
         </div>
         <div class="navigation_header" id="navigation_header">
             <button onclick="toggleSidebar()" class="btn_icon_header">
@@ -45,87 +45,89 @@
   </div>
   <span class="liner"></span>
   <!-- Carrosel -->
-  <div id="carouselExampleCaptions" class="carousel slide">
-
-    <!-- Início / indicadores para navegar nos slides do carrosel -->
-    <div class="carousel-indicators" id="ind">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <!-- Fim / indicadores para navegar nos slides do carrosel -->
-
-    <!-- Início / slide carrosel -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" id="carrosel-1">
+      <div class="carousel-item active">
         <img src="img/bannerV1.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2>Guia do Turismo Capivara</h2>
-          <p>Instituto Federal do Píaui - São Raimundo Nonato</p>
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/bannerV2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/bannerV3.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2>Guia do Turismo Capivara</h2>
-          <p>Instituto Federal do Píaui - São Raimundo Nonato</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="img/bannerV4.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Guia do Turismo Capivara</h2>
-          <p>Instituto Federal do Píaui - São Raimundo Nonato</p>
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
         </div>
       </div>
     </div>
-    <!-- Fim / slide carrosel -->
-    
-    <!-- Início / anterior e próximo slide carrosel -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-    <!-- Fim / anterior e próximo slide carrosel -->
   </div>
 
   <section class="conhecer-mais">
     <div class="container text-main">
       <h1 class="h1-main">São Raimundo Nonato</h1>
       <p class="p-main">O municipio de São Raimundo Nonato desenvolveu-se com a construção de casas com a abertura e meno de ruas. Os seus primeres habitantes organizam na sua praça principal uma fera de periodicidade semanal que ficou cornecida em todo o estado. Um dos principais pontos turisticos da cidade é o Parque Nacional Serra da Capivara. Esto parque é considerado pammonio mundial da UNESCO, sendo o responsável pela reconhecimento mundial do município.</p>
-      <button type="button" class="btn btn-outline-primary" style="font-weight: 700;">Conhecer a Cidade</button>
+      <button class="btn2 btn_margin2" style="font-weight: 700;">CONHECER</button>
     </div>
     <div class="container cards">
       <h2 class="pontos_turisticos">Pontos Turísticos</h2>
       <div class="row">
         <div class="col-sm-8 ab1 imgs">
-          <img class="animetion1" src="img/Rectangle 1.png" alt="">
-          <p class="xindex1"><a href="" class="pontos">Serra da Capivara</a></p>
+          <a href="">
+            <img class="animetion1" src="img/Rectangle 1.png" alt="">
+            <p class="xindex1">Serra da Capivara</p>
+          </a>
         </div>
         <div class="col-sm-4 ab2">
           <div class="col-sm-12 ab3 imgs">
-            <img src="img/Rectangle 3.png" alt="">
-            <p class="xindex2"><a href="" class="pontos">Sitio João Pimenta</a></p>
+            <a href="">
+              <img src="img/Rectangle 3.png" alt="">
+              <p class="xindex2">Sitio João Pimenta</p>
+            </a>
           </div>
-          <div class="col-sm-12 ab4 imgs"><img src="img/Rectangle 8.png" alt=""></div>
+          <div class="col-sm-12 ab4 imgs">
+            <a href="">
+              <img src="img/Rectangle 8.png" alt="">
+            </a>
+          </div>
         </div>
       </div>
       <div class="row linha2">
         <div class="col-sm-4 ab5 imgs">
-          <img src="img/Rectangle 5.png" alt="">
-          <p class="xindex3"><a href="" class="pontos">Museu do Homem Americano</a></p>
+          <a href="">
+            <img src="img/Rectangle 5.png" alt="">
+            <p class="xindex3">Museu do Homem Americano</p>
+          </a>
         </div>
         <div class="col-sm-4 ab6 imgs">
-          <img src="img/Rectangle 6.png" alt="">
-          <p class="xindex4"><a href="" class="pontos">Museu da Natureza</a></p>
+          <a href="">
+            <img src="img/Rectangle 6.png" alt="">
+            <p class="xindex4">Museu da Natureza</p>
+          </a>
         </div>
-        <div class="col-sm-4 ab7 imgs"><img src="img/Rectangle 7.png" alt=""></div>
+        <div class="col-sm-4 ab7 imgs">
+          <a href="">
+            <img src="img/Rectangle 7.png" alt="">
+          </a>
+        </div>
       </div>
-      <button type="button" class="btn btn-outline-primary btn2" style="font-weight: 700;">Conhecer Pontos Turísticos</button>
+      <button class="btn2 btn_margin" style="font-weight: 700;">VISITAR</button>
     </div>
   </section>
   <section class="serviços"> 
@@ -133,52 +135,60 @@
       <h2 class="serv_text">Serviços</h2>
       <div class="row serv_row">
         <div class="col">
-          <a href="">
-            <img src="img/imagem.png" alt="#">
+          <a href="#">
+            <img src="img/imagem.png" alt="">
             <p>Restaurantes</p>
           </a>
         </div>
         <div class="col">
-          <a href="">
-            <img src="img/imagem.png" alt="#">
-            <p>Hotéis</p>
+          <a href="#">
+            <img src="img/imagem.png" alt="">
+            <p>Hoteis</p>
           </a>
         </div>
         <div class="col">
-          <a href="">
-            <img src="img/imagem.png" alt="#">
+          <a href="#">
+            <img src="img/imagem.png" alt="">
             <p>Bares</p>
-          </a>
-        </div>
-        <div class="col">
-          <a href="">
-            <img src="img/imagem.png" alt="#">
-            <p>Comércios</p>
           </a>
         </div>
       </div>
       <div class="row serv_row">
         <div class="col">
-          <a href="">
-            <img src="img/imagem.png" alt="#">
-            <p>Transportes</p>
+          <a href="#">
+            <img src="img/imagem.png" alt="">
+            <p>Eletrônicos</p>
           </a>
         </div>
         <div class="col">
-          <a href="">
-            <img src="img/imagem.png" alt="#">
+          <a href="#">
+            <img src="img/imagem.png" alt="">
+            <p>Comércios</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <img src="img/imagem.png" alt="">
+            <p>Transportes</p>
+          </a>
+        </div>
+      </div>
+      <div class="row serv_row">
+        <div class="col">
+          <a href="#">
+            <img src="img/imagem.png" alt="">
             <p>Farmácias</p>
           </a>
         </div>
         <div class="col">
-          <a href="">
-            <img src="img/imagem.png" alt="#">
+          <a href="#">
+            <img src="img/imagem.png" alt="">
             <p>Hospitais</p>
           </a>
         </div>
         <div class="col">
-          <a href="">
-            <img src="img/imagem.png" alt="#">
+          <a href="#">
+            <img src="img/imagem.png" alt="">
             <p>Outros</p>
           </a>
         </div>
@@ -186,12 +196,43 @@
     </div>
   </section>
 
+  <section class="eventos">
+    <div class="container event_container">
+      <h2>Eventos</h2>
+      <div class="row event_row">
+        <div class="col-sm-6 col1">
+          <p>Melhores eventos de São Raimundo Nonato</p>
+          <button class="btn2 btn_event" style="font-weight: 700;">VISITAR</button>
+        </div>
+        <div class="col-sm-6 col2">
+          <img src="img/Rectangle 10.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer class="rodape">
-    <div class="rodape2">
-      <p>Contato</p>
-      <p>Mais informações</p>
-      <p>© Todos os direitos reservados</p>
-      <p>Nazin.Dev & Dgd1gamer</p>
+    <div class="container rodape_content">
+      <div class="row rodape_row">
+        <div class="col-sm-4 left">
+          <p>Contato</p>
+          <span></span><a class="info_rodape" href="#">Sites de referêcia</a>
+          <span></span><a class="info_rodape" href="#">Documentos usado</a>
+          <span></span><a class="info_rodape" href="#">Referêcias gerais</a>
+        </div>
+        <div class="col-sm-4 center">
+          <a class="direitos" href="#">© Todos os direitos reservados.</a>
+          <a class="direitos" href="#">Nazin.dev & Dgd1gamer</a>
+        </div>
+        <div class="col-sm-4 rigth">
+          <div class="alinha">
+            <p>Mais informações</p>
+            <span></span><a class="info_rodape" href="#">Sites de referêcia</a>
+            <span></span><a class="info_rodape" href="#">Documentos usado</a>
+            <span></span><a class="info_rodape" href="#">Referêcias gerais</a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
