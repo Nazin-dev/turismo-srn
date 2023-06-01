@@ -1,25 +1,6 @@
-.parallax{
-  width: 100%;
-  height: 600px;
-  background-image: url(../img/A-124-scaled.jpg);
-  background-position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
 .navigation_header{
   z-index: 9999;
-}
-
-.parallax::after {
-  content: " ";
-  z-index: 1;
-  position: absolute;
-  margin-top: 215px;
-  width: 100%;
-  height: 50%;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
 }
 
 .topo p {
@@ -37,8 +18,8 @@ main {
 }
 
 .accordion-button {
-  background-color: #2d2d2d;
-  color: #0D6EFD;
+  background-color: #1A1E28;
+  color: #B6D0EE;
 }
 
 .meses-eventos {

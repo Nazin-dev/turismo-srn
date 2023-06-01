@@ -3,7 +3,7 @@
 .parallax{
     width: 100%;
     height: 600px;
-    background-image: url(../img/para.jpeg);
+    background-image: url(../img/A-124-scaled.jpg);
     margin: 0px;
     padding: 0px;
     
@@ -16,12 +16,6 @@
     position: relative;
     font-weight: 900;
 
-}
-
-.font {
-  font-family: 'Roboto';
-  font-size: 15px;
-  font-style: italic;
 }
 
 .navigation_header{
@@ -72,31 +66,5 @@
   font-weight: 900;
 }
 
-h1 {
-  color: #1A1E28;
-  font-family: 'Roboto';
-  font-weight: 700px;
-  font-size: 40px;
-}
- 
- p {
-  color: #485568;
-  font-family: 'Roboto';
-  font-size: 24px;
-}
-
-.historia h1 {
-  margin-bottom: 40px;
-}
-
-.historia p {
-  margin-bottom: 30px;
-  font-family: 'Roboto';
-}
-
-.historia img {
-  height: 400px;
-  margin-bottom: 30px;
-}
 
 
