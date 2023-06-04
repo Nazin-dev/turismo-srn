@@ -12,7 +12,7 @@
   color: #485568;
 }
 
-p {
+.p-a {
   color: #485568;
   margin: 0px;
   text-align: center;
@@ -21,6 +21,7 @@ p {
 .texto_modal {
   text-align: justify;
   text-indent: 30px;
+  color: #485568;
 }
 
 .imagem_pontos {
@@ -53,7 +54,7 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width: 401px){
+@media screen and (max-width: 401px){
   .btn2 {
     height: 70px;
   }
