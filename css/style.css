@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 /* Estilização do carrosel */
 
 .carousel-indicators .active {
@@ -288,10 +288,12 @@ h3 {
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 8px;
+  transition: 0.5s;
 }
 
-.col {
-  box-shadow: 5px 5px 15px #6E6E8C;
+.col:hover {
+  box-shadow: 5px 5px 10px #6E6E8C;
+  transition: 0.5s;
 }
 
 .col img {
@@ -312,11 +314,21 @@ h3 {
 }
 
 .col-sm-4 img {
-  box-shadow: 5px 5px 15px #6E6E8C ;
+  transition: 0.5s;
 }
 
 .col-sm-8 img {
-  box-shadow: 5px 5px 15px #6E6E8C ;
+  transition: 0.5s;
+}
+
+.col-sm-4 img:hover {
+  box-shadow: 5px 5px 10px #6E6E8C;
+  transition: 0.5s;
+}
+
+.col-sm-8 img:hover {
+  box-shadow: 5px 5px 10px #6E6E8C;
+  transition: 0.5s;
 }
 
 a {

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- JavaScript bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
+ <script src="../scripts/script.js" defer></script>
+ <link rel="stylesheet" href="../css/menu-responsivo.css">
+ <link rel="stylesheet" href="../css/serviços.css">
+ <link rel="stylesheet" href="../css/style.css">
+ <link rel="stylesheet" href="../css/parallax-pontos.css">
+ <link rel="stylesheet" href="../css/pontos-turisticos.css">
+  <title>Pontos Turísticos | SRN</title>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <header>
+      <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <p class="logo_texto">Turismo SRN</p>
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="../index.html" class="active home">Home</a>
+            <a href="../paginas/historia.html">São Raimundo Nonato</a>
+            <a href="../paginas/pontos-turisticos.html">Pontos Turísticos</a>
+            <a href="../paginas/serviços.html">Serviços</a>
+            
+            <li class="nav-item dropdown list-group-item">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Outros
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../paginas/eventos.html">Eventos</a></li>
+                <li><a class="dropdown-item" href="#">Mapa Turístico</a></li>
+                <li><a class="dropdown-item" href="#">Galeria</a></li>
+              </ul>
+            </li>
+        </div>
+    </div>
+  </div>
+  <!-- Parallax inicio -->
+  <section class="parallax">
+    <h1 class="text">Pontos Turísticos</h1>
+  </section>
+  <!-- Parallax fim -->
+  
+  <main class="principal">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="img-div">
+            <img class="imagem_pontos" src="../img/Ellipse 1.png" alt="">
+          </div>
+          <p class="p-1">Parque Serra da Capivara</p>
+          <p><a href="https://goo.gl/maps/1JLHujfrBBfbdVUG8" class="ver" target="blank">VER NO MAPA</a></p>
+          <div class="btn-div">
+            <button class="btn2" type="button" data-bs-toggle="modal" data-bs-target="#modal-1">CONHECER<i class="bi bi-arrow-right-circle"></i></button>
+          </div>
+          
+        </div>
+
+        <div class="col-md-4">
+          <div class="img-div">
+            <img class="imagem_pontos" src="../img/Ellipse 2.png" alt="">
+          </div>
+          <p class="p-1">Museu da Natureza</p>
+          <p><a href="https://goo.gl/maps/sjbnz7nULgyaxF2T7" class="ver" target="blank">VER NO MAPA</a></p>
+          <div class="btn-div">
+            <button class="btn2" type="button" data-bs-toggle="modal" data-bs-target="#modal-2">CONHECER<i class="bi bi-arrow-right-circle"></i></button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="img-div">
+            <img class="imagem_pontos" src="../img/Ellipse 3.png" alt="">
+          </div>
+          <p class="p-1">Museu do Homem Americano</p>
+          <p><a href="https://goo.gl/maps/pUosJXckb2XQ3uCz7" class="ver" target="blank">VER NO MAPA</a></p>
+          <div class="btn-div">
+            <button class="btn2" type="button" data-bs-toggle="modal" data-bs-target="#modal-3">CONHECER<i class="bi bi-arrow-right-circle"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="img-div">
+            <img class="imagem_pontos" src="../img/Ellipse 4.png" alt="">
+          </div>
+          <p class="p-1">Casa da Memoria</p>
+          <p><a href="https://goo.gl/maps/HreDzQC1zSGaEgsE7" class="ver" target="blank">VER NO MAPA</a></p>
+          <div class="btn-div">
+            <button class="btn2" type="button" data-bs-toggle="modal" data-bs-target="#modal-4">CONHECER<i class="bi bi-arrow-right-circle"></i></button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="img-div">
+            <img class="imagem_pontos" src="../img/Ellipse 5.png" alt="">
+          </div>
+          <p class="p-1">Cerâmica</p>
+          <p><a href="https://www.saoraimundo.com/ceramicacapivara/" class="ver" target="blank">VER NO SITE</a></p>
+          <div class="btn-div">
+            <button class="btn2" type="button" data-bs-toggle="modal" data-bs-target="#modal-5">CONHECER<i class="bi bi-arrow-right-circle"></i></button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="img-div">
+            <img class="imagem_pontos" src="../img/Ellipse 6.png" alt="">
+          </div>
+          <p class="p-1">Praça do Abrigo</p>
+          <p><a href="https://goo.gl/maps/6wYfY3DnmVAPEVsf7" class="ver" target="blank">VER NO MAPA</a></p>
+          <div class="btn-div">
+            <button class="btn2" type="button" data-bs-toggle="modal" data-bs-target="#modal-6">CONHECER<i class="bi bi-arrow-right-circle"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="img-div">
+            <img class="imagem_pontos" src="../img/Ellipse 7.png" alt="">
+          </div>
+          <p class="p-1">Praça do Gavião</p>
+          <p><a href="https://goo.gl/maps/rVHVhTVG3AW3ssU16" class="ver" target="blank">VER NO MAPA</a></p>
+          <div class="btn-div">
+            <button class="btn2" type="button" data-bs-toggle="modal" data-bs-target="#modal-7">CONHECER<i class="bi bi-arrow-right-circle"></i></button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="img-div">
+            <img class="imagem_pontos" src="../img/Ellipse 8.png" alt="">
+          </div>
+          <p class="p-1">Praça do Relógio</p>
+          <p><a href="https://goo.gl/maps/99bMea57UvCymLyXA" class="ver" target="blank">VER NO MAPA</a></p>
+          <div class="btn-div">
+            <button class="btn2" type="button" data-bs-toggle="modal" data-bs-target="#modal-8">CONHECER<i class="bi bi-arrow-right-circle"></i></button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="img-div">
+            <img class="imagem_pontos" src="../img/Ellipse 9.png" alt="">
+          </div>
+          <p class="p-1">Alto do Cruzeiro</p>
+          <p><a href="https://goo.gl/maps/hHdNXFFVfdUADFut6" class="ver" target="blank">VER NO MAPA</a></p>
+          <div class="btn-div">
+            <button class="btn2" type="button" data-bs-toggle="modal" data-bs-target="#modal-9">CONHECER<i class="bi bi-arrow-right-circle"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal 5 -->
+    <div class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Cerâmica</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <p class="texto_modal">O grupo Cerâmica artesanal Serra da Capivara foi fundada pela arqueóloga Niède Guidon em 1992 e começou como uma cooperativa aos arredores do parque, mas atualmente é nternacionalmente conhecida pela sua ampla produção, fonte de renda para 30 trabalhadores da região e identidade própria. A empresa tem sede de produção na localidade Barreirinho- Cel. José Dias, e pontos de venda espalhados pela região (São Raimundo Nonato- Cidade, Museu do Homem Americano e Museu da Natureza), além da venda online.</p>
+          <p class="texto_modal">A cerâmica Serra da Capivara é um estilo de cerâmica artesanal produzido na região da Serra da Capivara, localizada no estado do Piauí, no nordeste do Brasil. A Serra da Capivara é conhecida por abrigar um dos mais ricos sítios arqueológicos das Américas, com pinturas rupestres e vestígios de ocupação humana que datam de milhares de anos atrás. A cerâmica Serra da Capivara é uma manifestação cultural única, que representa a tradição e a identidade do povo que vive nesta região.</p>
+          <p class="texto_modal">A cerâmica Serra da Capivara é feita principalmente por mulheres, que usam técnicas tradicionais de modelagem e queima. As peças são geralmente utilitárias, como panelas, potes e pratos, e apresentam formas simples e elegantes, com decoração em relevo ou pintura. As cores utilizadas são geralmente neutras, como o marrom e o creme, e as peças são queimadas em fornos a céu aberto, o que confere a elas uma tonalidade de tonalidade.</p>
+          <p class="texto_modal">Essa cerâmica é considerada uma importante manifestação cultural e econômica para a região da Serra da Capivara. Ela representa a herança cultural dos povos que habitaram a região ao longo dos tempos e é uma fonte de sustento para as comunidades locais. A produção e venda da cerâmica Serra da Capivara também se tornou uma atração turística, atraindo visitantes na história e cultura da região.</p>
+          <p class="texto_modal">
+            Essa cerâmica é considerada uma importante manifestação cultural e econômica para a região da Serra da Capivara. Ela representa a herança cultural dos povos que habitaram a região ao longo dos tempos e é uma fonte de sustento para as comunidades locais. A produção e venda da cerâmica Serra da Capivara também se tornou uma atração turística, atraindo visitantes na história e cultura da região.  </p>
+            <p class="texto_modal">Em resumo, a cerâmica Serra da Capivara é uma manifestação cultural rica e importante, que representa a história e a identidade do povo da região. Além de ser uma fonte de sustento e atração turística, a cerâmica Serra da Capivara contribui para a preservação do patrimônio cultural e para o desenvolvimento sustentável da região da Serra da Capivara.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-6 -->
+    <div class="modal fade" id="modal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Praça do Abrigo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <p class="texto_modal">A Praça do Abrigo é uma praça localizada em São Raimundo Nonato, município no estado do Piauí, Brasil. Essa praça é um local icônico na cidade, com uma rica história e significado para a comunidade local.</p>
+          <p class="texto_modal">Situado na sede da Fumdham, o Museu foi criado para divulgar a importância do patrimônio cultural deixado pelos povos pré-históricos na região. A exposição mostra os resultados de mais de quatro décadas de pesquisas realizadas na região do Parque.</p>
+          <p class="texto_modal">A Praça do Abrigo foi criada no fim da década de 1960 e seu nome originário era Praça Cinco de Setembro, uma homenagem à data de criação do município de São Raimundo Nonato, que ocorreu em 5 de setembro de 1912. No entanto, ao longo do tempo, a praça passou a ser popularmente conhecida como Praça do Abrigo, devido à presença de um antigo abrigo de ônibus no local.</p>
+          <p class="texto_modal">Essa praça é um ponto de encontro para os moradores locais e também é um ponto turístico, sendo um lugar de lazer, descanso e convivência social. A praça é conhecida por suas áreas verdes, bancos, calçadas arborizadas e um coreto central. Ela também é frequentemente utilizada para a realização de eventos culturais, artísticos e esportivos, como apresentações musicais, feiras, exposições e festivais.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal 7 -->
+    <div class="modal fade" id="modal-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Praça do Gavião</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <p class="texto_modal">A Praça do Gavião é uma praça localizada em São Raimundo Nonato, uma cidade histórica localizada no estado do Piauí, no nordeste do Brasil. Ela é considerada um dos principais pontos de encontro e lazer da cidade, sendo também um marco importante para a região.</p>
+          <p class="texto_modal">A Praça do Gavião foi criada no ano de 1941, durante a gestão do então prefeito da cidade, Manuel Nonato de Freitas. Seu nome é uma homenagem ao famoso sítio arqueológico da região, o Parque Nacional Serra da Capivara, que é conhecido mundialmente pela riqueza de sua biodiversidade e pela presença de importantes vestígios da ocupação humana na América do Sul, como pinturas rupestres datadas de milhares de anos atrás.</p>
+          <p class="texto_modal">A praça é caracterizada por um jardim amplo e arborizado, com diversas espécies de plantas típicas da região do cerrado. Possui também um coreto, que é utilizado para apresentações culturais e musicais, e uma homenagem em homenagem ao Gavião-real, uma das aves símbolos do Parque Nacional Serra da Capivara.</p>
+          <p class="texto_modal">A Praça do Gavião é um local de grande importância para a população local e para uma região como um todo. Ela é um espaço de convívio social, onde os moradores da cidade e os visitantes podem se reunir para descansar, conversar, praticar atividades físicas ou simplesmente apreciar a natureza ao redor. Além disso, a praça é um ponto de referência cultural, uma vez que é palco de eventos culturais e artísticos, valorizando a cultura local e promovendo o turismo na região.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal 8 -->
+    <div class="modal fade" id="modal-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Praça do Relogio</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <p class="texto_modal">OA Praça do Relógio é um local icônico situado em São Raimundo Nonato, uma cidade no estado do Piauí, no Brasil. É conhecida por seu relógio público, que se tornou um símbolo da cidade e um ponto de referência para moradores e visitantes. O relógio foi instalado na praça em 1968 e se tornou um marco na cidade, representando o progresso e o desenvolvimento local na época. Ele ainda funciona e é considerado um patrimônio cultural e histórico da região.</p>
+          <p class="texto_modal">A cultura relacionada é marcada por sua importância histórica e social para a comunidade local. A praça é um local de encontro para os moradores, onde as pessoas se reúnem para conversar, passear, praticar atividades físicas e participar de eventos culturais. É também um espaço utilizado para manifestações culturais e comemorativas, como shows, festas populares e comemorações religiosas.</p>
+          <p class="texto_modal">É adornada com jardins bem cuidados, bancos para descanso e iluminação noturna, tornando-a um lugar agradável para relaxar e apreciar a paisagem urbana. O relógio público, que é uma das principais características da praça, é uma estrutura imponente que se destaca em meio ao cenário local, atraindo a atenção de moradores e visitantes.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Alto do Cruzeiro </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <p class="texto_modal">Não é possível determinar uma data exata para a fundação do Alto do Cruzeiro em São Raimundo Nonato, já que se trata de um ponto turístico natural que existe há muitos anos na região. No entanto, sabe-se que a cruz que ficava no topo da colina foi construída em meados do século XX, provavelmente na década de 1950.</p>
+          <p class="texto_modal">Ao longo dos anos, o Alto do Cruzeiro tornou-se um importante ponto turístico da região, sendo visitado por moradores e turistas que desejam apreciar a vista panorâmica da cidade e das serras que a cercam, além de realizar atividades físicas e religiosas. O local também recebe eventos culturais e festividades religiosas ao longo do ano.</p>
+          <p class="texto_modal">O Alto do Cruzeiro é um ponto turístico localizado na cidade de São Raimundo Nonato, no estado do Piauí, no Brasil. É uma colina que fica a cerca de 1,5 km do centro da cidade, e que oferece uma vista panorâmica da região.</p>
+          <p class="texto_modal">No topo do Alto do Cruzeiro havia uma cruz de concreto de cerca de 10 metros de altura, que podia ser vista de diversos pontos da cidade, porém,  em 2017 em uma tempestade a mesma veio a cair, ficando somente sua base de ferro. Para chegar ao topo, era preciso subir uma escadaria de cerca de 140 degraus.</p>
+          <p class="texto_modal">Além da vista panorâmica, o Alto do Cruzeiro oferece também uma boa opção para caminhadas e exercícios físicos, já que a subida da escadaria exige um esforço considerável. É um dos pontos turísticos mais visitados da cidade de São Raimundo Nonato e uma boa opção para quem deseja ter uma vista privilegiada da região.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Parque Nacional Serra da Capivara</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p class="texto_modal">O parque foi criado através do decreto de nº 83.548, emitido pela Presidência da República em 5 de junho de 1979, com a finalidade de proteger um dos mais importantes exemplares do patrimônio pré-histórico do país. Originalmente com 100 000 hectares, a proteção do Parque foi ampliada pelo decreto de nº 99.143 de 12 de março de 1990 com a criação de Áreas de Preservação Permanentes de 35 000 hectares. A administração da unidade está a cargo do Instituto Chico Mendes de Conservação da Biodiversidade (ICMBIO).</p>
+       <p class="texto_modal">O Parque Nacional Serra da Capivara é um local de conservação arqueológica com uma grande riqueza de vestígios que se conservaram durante milênios. O patrimônio cultural e os ecossistemas locais estão intimamente ligados, pois a conservação do primeiro depende do equilíbrio desses ecossistemas. O equilíbrio entre os recursos naturais é o condicionante na conservação dos recursos culturais e foi o que orientou o zoneamento, a gestão e o uso do Parque pelo poder público.</p>
+       <p class="texto_modal">É um local com vários atrativos, monumental museu a céu aberto, entre belíssimas formações rochosas, onde encontram sítios arqueológicos e paleontológicos espetaculares, que testemunham a presença de humanos e animais pré-históricos. O parque nacional foi criado graças, em grande parte, ao trabalho da arqueóloga Niède Guidon, que hoje dirige a Fundação Museu do Homem Americano, instituição responsável pelo manejo do parque. Pelo seu valor histórico e cultural, o parque foi declarado pela UNESCO, em 1991, Patrimônio Cultural da Humanidade.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 2 -->
+<div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Museu da Natureza</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p class="texto_modal">O Museu da Natureza foi inaugurado no dia 18 de dezembro de 2018. A ideia desta obra saiu da cabeça pensante e visão de futuro da arqueóloga Niède Guidon, com projeto desenvolvido pela Fundação do Museu do Homem Americano (Fumdham). O museu tem curadoria de Marcello Dantas.</p>
+       <p class="texto_modal">Através de alta tecnologia e interação o Museu leva o visitante a uma imersão pela história natural de nosso planeta, desde o surgimento da vida até os dias atuais, passando pelas transformações do meio ambiente e tendo as mudanças climáticas como protagonistas dos acontecimentos.</p>
+       <p class="texto_modal">Localizado no Parque Nacional da Serra da Capivara, no município de Coronel José Dias, no Piauí, o Museu da Natureza foi inaugurado em dezembro de 2018. Para sua construção, a Fundação Museu do Homem Americano (Fumdham) – entidade civil criada na década de 1970 para preservar o Parque Nacional Serra da Capivara e seu acervo – recebeu apoio não reembolsável no valor de R$ 13,7 milhões do Banco Nacional de Desenvolvimento Econômico e Social (BNDES), o correspondente a 68% do valor total do projeto.</p>
+       <p class="texto_modal">Em formato espiral, com dois pavimentos e uma área total de 4 mil m², o Museu da Natureza está localizado próximo ao Centro de Visitantes do parque. Com uma construção de aço e vidro, o espaço abriga uma coleção de fósseis da macrofauna que ocupava a região e que sobreviveu às mudanças climáticas ocorridas há cerca de 10 mil anos. Parte do acervo é composto por espécies descobertas na região, enquanto outra parte, por animais que hoje só existem no Bioma Amazônia. O museu oferece ainda uma série de experiências interativas aos visitantes, com diferentes recursos tecnológicos, como projeções e realidade aumentada, e conta com auditório, sanitários, restaurante, loja, reserva técnica e instalações administrativas.
+      </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal 3 -->
+<div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Museu do Homem Americano</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p class="texto_modal">O Museu do Homem Americano é um museu localizado no município de São Raimundo Nonato, no estado do Piauí, onde está o Parque Nacional Serra da Capivara, um dos principais sítios arqueológicos do Brasil, pois lá existem cerca de 700 sítios arqueológicos com pinturas de até mais de 12 mil anos atrás.</p>
+       <p class="texto_modal">Situado na sede da Fumdham, o Museu foi criado para divulgar a importância do patrimônio cultural deixado pelos povos pré-históricos na região. A exposição mostra os resultados de mais de quatro décadas de pesquisas realizadas na região do Parque.</p>
+       <p class="texto_modal">Ele fica dentro da sede da FUMDHAM (Fundação Museu do Homem Americano), que é a responsável pelo museu e que foi criada a partir de uma cooperação entre cientistas brasileiros e franceses que trabalham nessa região desde o ano de 1973. Ela é uma organização sem fins lucrativos, mas atua em parceria com os governos municipal, estadual e federal. Além disso, a FUMDHAM é uma sociedade civil e filantrópica.</p>
+       <p class="texto_modal">No início de 2017 o Museu do Homem Americano também começou a ser responsável do comitê permanente de acompanhamento e gestão do Parque Nacional da Serra da Capivara, um modelo de gestão compartilhada, instituído pelo governo do estado do Piauí e o Ministério da Cultura do Brasil.</p>
+      </div>
+
+      <p class="texto_modal">Site: <a class="link_p" href="http://fumdham.org.br/museus/" target="blank">www.fumdham.org.br</a></p>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal 4 -->
+<div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Casa da Memória</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="texto_modal">A Casa da Memória é um museu localizado em São Raimundo Nonato, uma cidade situada no estado do Piauí, no Nordeste do Brasil. Ela foi criada com o objetivo de preservar e promover a rica herança cultural e histórica da região, especialmente relacionada ao Parque Nacional Serra da Capivara, que é uma área de grande importância arqueológica e paleontológica.</p>
+        <p class="texto_modal">A Casa da Memória desempenha um papel fundamental na promoção do turismo cultural na região, atraindo visitantes interessados ​​na história, arqueologia e cultura local. O museu possui uma exposição permanente que apresenta a história da região, desde a pré-história até os dias atuais, destacando a importância dos sítios arqueológicos e sua relação com as comunidades locais.</p>
+        <p class="texto_modal">Além disso, a Casa da Memória também realiza atividades educacionais, como palestras, oficinas e cursos, voltados para estudantes, pesquisadores e comunidade em geral, confiantes para a valorização e disseminação do conhecimento sobre a rica herança cultural da região. O museu também promove ações de preservação e conservação do patrimônio arqueológico e paleontológico, garantido para sua salvaguarda e proteção.</p>
+        <p class="texto_modal">A Casa da Memória é um importante centro de pesquisa e divulgação da história e cultura do Parque Nacional Serra da Capivara e região, desempenhando um papel relevante na preservação e promoção desse patrimônio cultural único. Ela é considerada uma referência na área de arqueologia e museologia no Brasil e contribui para a valorização e reconhecimento da riqueza cultural do Piauí e do Nordeste brasileiro.
+       </p>
+       <p class="texto_modal">R. Prof. José Leandro, 247, São Raimundo Nonato - PI, 64770-000</p>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
