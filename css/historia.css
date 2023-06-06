@@ -72,14 +72,14 @@
   font-weight: 900;
 }
 
-h1 {
+h1, h2 {
   color: #1A1E28;
   font-family: 'Roboto';
   font-weight: 700px;
   font-size: 40px;
 }
  
- p {
+.texto_hist {
   color: #485568;
   font-family: 'Roboto';
   font-size: 24px;
@@ -99,4 +99,11 @@ h1 {
   margin-bottom: 30px;
 }
 
+.container {
+  padding: 30px;
+}
 
+.como_chegar {
+  margin-top: 140px;
+  margin-bottom: 40px;
+}

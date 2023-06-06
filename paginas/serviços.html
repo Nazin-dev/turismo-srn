@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <!-- CSS bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!-- JavaScript bootstrap -->
@@ -234,29 +236,71 @@
   <section class="mapa">
     <h2>Mapa de serviços</h2>
   </section>
-  <footer class="rodape">
-    <div class="container rodape_content">
-      <div class="row rodape_row">
-        <div class="col-sm-4 left">
-          <p>Contato</p>
-          <span></span><a class="info_rodape" href="#">Sites de referêcia</a>
-          <span></span><a class="info_rodape" href="#">Documentos usado</a>
-          <span></span><a class="info_rodape" href="#">Referêcias gerais</a>
+  <footer class="footer">
+    <div class="conteudo">
+      <div class="linha_row">
+        <div class="footer-col">
+          <h4>Sobre</h4>
+          <ul>
+            <li><button type="button" class="bttn" data-bs-toggle="modal" data-bs-target="#exampleModal">fontes</button></li>
+            <li><a href="#">nazin.dev & dgd1gamer</a></li>
+            <li><a href="#">© todos os direitos reservados</a></li>
+            <!-- <li><a href="#">2023</a></li> -->
+          </ul>
         </div>
-        <div class="col-sm-4 center">
-          <a class="direitos" href="#">© Todos os direitos reservados.</a>
-          <a class="direitos" href="#">Nazin.dev & Dgd1gamer</a>
+        <div class="footer-col">
+          <h4>Participantes</h4>
+          <ul>
+            <li><a href="#">Nailton dos Reis Maciel</a></li>
+            <li><a href="#">Danilo Gameleira Dias</a></li>
+            <li><a href="#">Launny Ferreira Santos</a></li>
+            <li><a href="#">Kaiane Alves Soares</a></li>
+            <li><a href="#">Nicole de Oliveira Castro</a></li>
+            <li><a href="#">Luis Henrique Galvão Nunes</a></li>
+            <li><a href="#">Jõao Paulo Mota Dias</a></li>
+          </ul>
         </div>
-        <div class="col-sm-4 rigth">
-          <div class="alinha">
-            <p>Mais informações</p>
-            <span></span><a class="info_rodape" href="#">Sites de referêcia</a>
-            <span></span><a class="info_rodape" href="#">Documentos usado</a>
-            <span></span><a class="info_rodape" href="#">Referêcias gerais</a>
+        <div class="footer-col">
+          <h4>Links Rapidos</h4>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">são raimundo</a></li>
+            <li><a href="#">pontos turísticos</a></li>
+            <li><a href="#">eventos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Fale Conosco</h4>
+          <div class="social-links">
+            <a target="_blank" href="https://www.instagram.com/dgd_yz/"><i class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://wa.me/5589981350933?text=Ol%C3%A1%2C+Nailton%21"><i class="bi bi-telephone"></i></a>
+            <a target="_blank" href="mailto:nazin.dev@gmail.com?Subject=Título%20da%20mensagem"><i class="bi bi-envelope"></i></a>
+            <a target="_blank" href="https://github.com/Nazin-dev"><i class="bi bi-github"></i></a>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Fontes</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="p_footer">Font 1: <a class="link_footer"  href="http://fumdham.org.br/museus/">http://fumdham.org.br/museus/</a> </p>
+          <p class="p_footer">Font 2: <a class="link_footer" href="http://portal.iphan.gov.br/pagina/detalhes/42">http://portal.iphan.gov.br/pagina/detalhes/42</a> </p>
+          <p class="p_footer">Font 3: <a class="link_footer" href="https://www.conhecaopiaui.com/noticia/museu-da-natureza-na-serra-da-capivara-o-unico-no-brasil-sobre-a-evolucao-da-natureza">https://www.conhecaopiaui.com/noticia/museu-da-natureza-na-serra-da-capivara-o-unico-no-brasil-sobre-a-evolucao-da-natureza</a> </p>
+          <p class="p_footer">Font 4: <a class="link_footer" href="https://pt.m.wikipedia.org/wiki/Museu_do_Homem_Americano">https://pt.m.wikipedia.org/wiki/Museu_do_Homem_Americano</a> </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
